@@ -48,7 +48,7 @@ git clone https://github.com/2020LM/FocusTimer.git
 cd FocusTimer
 
 # Install dependencies
-npm install
+npm install --legacy-peer-deps
 ```
 
 ## 🚀 Running Locally
