@@ -42,10 +42,10 @@ To clone and configure this application locally, run the following commands:
 
 ```bash
 # Clone the repository
-git clone https://github.com/2020LM/react-repasoUpdate.git
+git clone https://github.com/2020LM/FocusTimer.git
 
 # Navigate into the project directory
-cd react-repasoUpdate
+cd FocusTimer.git
 
 # Install dependencies
 npm install
