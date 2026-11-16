@@ -45,7 +45,7 @@ To clone and configure this application locally, run the following commands:
 git clone https://github.com/2020LM/FocusTimer.git
 
 # Navigate into the project directory
-cd FocusTimer.git
+cd FocusTimer
 
 # Install dependencies
 npm install
