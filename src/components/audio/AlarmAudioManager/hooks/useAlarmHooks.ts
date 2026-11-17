@@ -1,5 +1,7 @@
 // Third-Party & Ecosystem Imports
 import { useEffect, useRef } from "react";
+
+// Internal Tools & Utilities
 import type { UseAlarmAudioOptions } from "../data/ObjectDescription.ts";
 
 // This hook manages the playback of alarm audio based on the alarm state and timer.
@@ -34,7 +36,7 @@ export const useAlarmAudio = ({
     if (!audioRef.current) return;
     audioRef.current.volume = volume / 100;
     audioRef.current.muted = muted;
-  }, [volume, muted]);
+  }, [sound, volume, muted]);
 
   // Plays the alarm when the timer finishes or the selected alarm changes.
   useEffect(() => {

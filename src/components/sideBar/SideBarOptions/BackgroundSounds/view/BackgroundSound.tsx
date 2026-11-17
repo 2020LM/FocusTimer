@@ -7,8 +7,6 @@ import play from "../../../../../assets/img/icons/icons8-play-50.webp";
 import pause from "../../../../../assets/img/icons/icons8-pausa-50.webp";
 import repeatSound from "../../../../../assets/img/icons/icons8-repeat-50_5_11zon_115_11zon.webp";
 import notRepeatSound from "../../../../../assets/img/icons/icons8-repeat-one-50.webp";
-
-// Local Components
 import { useBackgroundSoundHooks } from "../hooks/useBackgroundSoundHooks.ts";
 
 // Component Styles

@@ -8,7 +8,7 @@ import "@testing-library/jest-dom";
 import { store } from "../../../../../store/store.ts"
 import { setMutedAlarm } from "../../../../../store/slices/Alarm/AlarmSlice.js";
 
-// Local Components
+// Internal Tools & Utilities
 import { AlarmSound } from "../view/alarmSounds.tsx";
 
 beforeEach(() => {

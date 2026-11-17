@@ -4,8 +4,10 @@ import { render, screen, fireEvent } from "@testing-library/react"
 import { Provider } from "react-redux";
 
 // Architecture & Global State Imports
-import { LanguageOptions } from "../view/language.tsx"
 import { store } from "../../../../../store/store.ts"
+
+// Internal Tools & Utilities
+import { LanguageOptions } from "../view/language.tsx"
 
 test("Checking if all the elements are in the screen", () => {
 

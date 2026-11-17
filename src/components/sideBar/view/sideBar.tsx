@@ -12,8 +12,6 @@ import {selectVisibleSideBar, setVisibleSideBar as setVisibleSideBarAction,
 import close from "../../../assets/img/icons/cerrar_3_11zon_107_11zon-removebg-preview.png";
 import closeRed from "../../../assets/img/icons/cerrar_rojo__2_11zon_106_11zon-removebg-preview.png";
 import right from "../../../assets/img/icons/icons8-derecha-24.png";
-
-// Local Components
 import { SideBarContent } from "./sideBarContent.js";
 
 // Component Styles

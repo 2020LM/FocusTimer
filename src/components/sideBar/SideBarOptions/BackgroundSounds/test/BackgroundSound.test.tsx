@@ -11,7 +11,7 @@ import {
 } from "../../../../../store/slices/Sounds/SoundsSlice.js";
 import { store } from "../../../../../store/store.js";
 
-// Local Components
+// Internal Tools & Utilities
 import { BackgroundSound } from "../view/BackgroundSound.tsx";
 
 const songIndex = 0;

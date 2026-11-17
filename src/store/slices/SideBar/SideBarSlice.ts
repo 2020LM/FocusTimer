@@ -1,5 +1,7 @@
 // Third-Party & Ecosystem Imports
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+
+// Architecture & Global State Imports
 import { RootState } from "../../store.js";
 
 

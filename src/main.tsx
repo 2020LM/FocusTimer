@@ -3,7 +3,7 @@ import React from "react";
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 
-// Architecture & Global State Imports
+// Internal Tools & Utilities
 import App from "./App.js";
 
 // Component Styles

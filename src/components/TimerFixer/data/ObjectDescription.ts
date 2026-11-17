@@ -1,3 +1,4 @@
+// Third-Party & Ecosystem Imports
 import type { ChangeEvent } from "react";
 
 export type TimerDigitId = "hours" | "hour" | "minutes" | "seconds";

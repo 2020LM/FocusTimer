@@ -6,7 +6,7 @@ import { Blurhash } from "react-blurhash";
 // Architecture & Global State Imports
 import { selectInitialSeconds } from "../../store/slices/Time/TimeSlice.ts";
 
-// Local Components
+// Internal Tools & Utilities
 import { Timer } from "../../components/timer/view/timer.tsx";
 import { AlarmAudioManager } from "../../components/audio/AlarmAudioManager/view/AlarmAudioManager.tsx";
 import { BackgroundSoundManager } from "../../components/audio/BackgroundSoundManager/view/BackgroundSoundManager.tsx";
@@ -20,7 +20,7 @@ import classes from "./index.module.css";
 export const FocusTimerPage = () => {
   const newTime = (seconds: number) => {
     const time = new Date();
-    time.setSeconds(time.getSeconds() + seconds); // 10 minutes timer
+    time.setSeconds(time.getSeconds() + seconds);
     return time;
   };
 

@@ -11,6 +11,36 @@ img {
   object-fit: cover;
 }
 
+.backgroundButton {
+  display: block;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  box-shadow: none;
+  line-height: 0;
+  transition: none;
+}
+
+.backgroundButton:hover {
+  background: transparent;
+  box-shadow: none;
+}
+
+.backgroundButton:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.backgroundButton:focus-visible {
+  outline: 2px solid #333;
+  outline-offset: 2px;
+}
+
+.backgroundButton img {
+  display: block;
+}
+
 .container {
   display: flex;
   flex-direction: row;

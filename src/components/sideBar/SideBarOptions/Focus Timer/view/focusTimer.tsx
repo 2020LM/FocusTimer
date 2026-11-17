@@ -3,8 +3,10 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 // Architecture & Global State Imports
-import { translator } from "../../../../translator/translator.ts";
 import { selectCurrentLanguage } from "../../../../../store/slices/Languages/LanguageSlice.ts";
+
+// Internal Tools & Utilities
+import { translator } from "../../../../translator/translator.ts";
 
 // Component Styles
 import classes from "./focosTimer.module.css";

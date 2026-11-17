@@ -11,13 +11,15 @@ import { useState } from "react"
 
 // Architecture & Global State Imports
 import { store } from "../../../store/store.ts";
-import { translator } from "../../translator/translator.ts";
 import {
   setFixingTimer,
   setInitialSeconds,
   setSecondsRestart,
   setTriggeredFixingTime,
 } from "../../../store/slices/Time/TimeSlice.js";
+
+// Internal Tools & Utilities
+import { translator } from "../../translator/translator.ts";
 
 // Defining global variables and funcitons.
 const mockRestart = jest.fn();
@@ -78,6 +80,7 @@ jest.unstable_mockModule("react-timer-hook", () => ({
   }),
 }));
 
+// Internal Tools & Utilities
 const { Timer } = await import("../view/timer.tsx");
 
 describe("Checking if each element is showing or hiding porperly", () => {

@@ -1,4 +1,5 @@
 // jest.config.ts
+// Third-Party & Ecosystem Imports
 import type { Config } from 'jest';
 
 const config: Config = {

@@ -8,8 +8,8 @@ import { Provider } from "react-redux";
 import { store } from "../../../../../../store/store.ts"
 import { setMutedAlarm } from "../../../../../../store/slices/Alarm/AlarmSlice.js";
 
-// Local Components
-import { AlarmConfiguration } from "../AlarmConfiguration.tsx"
+// Internal Tools & Utilities
+import { AlarmConfiguration } from "../view/AlarmConfiguration.tsx"
 
 beforeEach(() => {
     // Store Configuration.

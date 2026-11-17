@@ -1,5 +1,7 @@
+// Third-Party & Ecosystem Imports
 import type { ButtonHTMLAttributes } from "react";
 
+// Component Styles
 import classes from "./mainMenu.module.css";
 
 // Builds the accessibility, carousel, and styling props for a menu slide button.

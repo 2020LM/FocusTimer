@@ -1,7 +1,7 @@
 // Third-Party & Ecosystem Imports
 import React from "react";
 
-// Local Components
+// Internal Tools & Utilities
 import { Backgrounds } from "../SideBarOptions/backgrounds/view/backgrounds.tsx";
 import { BackgroundSounds } from "../SideBarOptions/BackgroundSounds/view/backgroundSounds.tsx";
 import { AlarmSound } from "../SideBarOptions/alarmSounds/view/alarmSounds.tsx";

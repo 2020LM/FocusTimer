@@ -12,7 +12,7 @@ import { Provider } from "react-redux";
 import { setFixingTimer } from "../../../store/slices/Time/TimeSlice.ts";
 import { store } from "../../../store/store.ts";
 
-// Local Components
+// Internal Tools & Utilities
 import { TimerFixer } from "../view/TimerFixer.tsx";
 
 describe("Testing component mounting and unmounting" , () => {
@@ -82,6 +82,30 @@ test("closes the modal when the close button is clicked", async () => {
 })
 
 })
+
+test("accepts only digits from 0 to 6 for tens of seconds", () => {
+    store.dispatch(setFixingTimer(true));
+    render(
+        <Provider store={store}>
+            <TimerFixer />
+        </Provider>
+    );
+
+    const tensOfSeconds = screen.getByRole("textbox", { name: "Ten of Seconds" });
+    for (const value of ["0", "1", "2", "3", "4", "5"]) {
+        fireEvent.change(tensOfSeconds, { target: { value } });
+        expect(tensOfSeconds).toHaveValue(value);
+    }
+
+    for (const value of ["6","7", "8", "9"]) {
+        fireEvent.change(tensOfSeconds, { target: { value } });
+        expect(tensOfSeconds).toHaveValue("5");
+    }
+
+    const seconds = screen.getByRole("textbox", { name: "Seconds" });
+    fireEvent.change(seconds, { target: { value: "9" } });
+    expect(seconds).toHaveValue("9");
+});
 
 describe("Checking if the arrows moves the numbers on the screen properly" , () => {
     describe("Cheking the arrowsUp" , () => {

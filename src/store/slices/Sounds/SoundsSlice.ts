@@ -4,36 +4,12 @@ import { createSelector, createSlice, PayloadAction } from "@reduxjs/toolkit";
 // Architecture & Global State Imports
 import { BackgroundMusic } from "../../../components/sideBar/SideBarOptions/BackgroundSounds/data/backgroundSoundsData.ts";
 import { RootState } from "../../store.js";
+import type { BackgroundSong, SoundsState, UpdateSongPayload } from "./types/SoundsSliceType.tsx";
 
 // Internal Tools & Utilities
 import contextLoader from "../../../lib/ContextLoader.js";
 
 const songs: BackgroundSong[] = BackgroundMusic;
-
-export type BackgroundSong = {
-  id: number;
-  isPlaying: string | boolean;
-  song: string;
-  duration: number;
-  type: string;
-  repeat: string | boolean;
-  currentTime: number;
-};
-
-type SoundsState = {
-  songs: BackgroundSong[];
-  currentSong: Partial<BackgroundSong>;
-  volumeMusic: number;
-  mutedMusic: boolean;
-};
-
-type UpdateSongPayload = {
-  [K in keyof BackgroundSong]: {
-    index: number;
-    attribute: K;
-    value: BackgroundSong[K];
-  };
-}[keyof BackgroundSong];
 
 const currentSong: Partial<BackgroundSong> = {};
 const volumeMusic: number = contextLoader.loadLocalStorage(
