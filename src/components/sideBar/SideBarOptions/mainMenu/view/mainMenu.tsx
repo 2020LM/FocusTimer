@@ -14,9 +14,9 @@ import bell from "../../../../../assets/img/icons/campana_15_11zon_99_11zon.webp
 import soundsIcon from "../../../../../assets/img/icons/musica_10_11zon_123_11zon.webp";
 import languagesIcon from "../../../../../assets/img/icons/languages.webp";
 import focusTimerIcon from "../../../../../../favicons/favIcons.webp";
+import { carouselItemProps } from "./mainMenuStyle.ts";
 
 // Component Styles
-import { carouselItemProps } from "./mainMenuStyle.ts";
 import classes from "./mainMenu.module.css";
 
 export const MainMenu = () => {

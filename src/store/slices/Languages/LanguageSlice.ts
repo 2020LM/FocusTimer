@@ -4,19 +4,14 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 // Architecture & Global State Imports
 import { LanguageData } from "../../../components/sideBar/SideBarOptions/languegueOptions/data/languageData.ts"
 import { RootState } from "../../store.js";
+import type { Language, LanguageState } from "./types/LanguageSliceType.tsx";
 
 // Internal Tools & Utilities
 import contextLoader from "../../../lib/ContextLoader.js";
 
 const languages = LanguageData
-type Language = (typeof LanguageData)[number];
 
 const currentLanguage: Language = contextLoader.loadLocalStorage("language", languages[0])
-
-type LanguageState = {
-    languages: Language[];
-    currentLanguage: Language;
-};
 
 const initialState: LanguageState = {
     languages,

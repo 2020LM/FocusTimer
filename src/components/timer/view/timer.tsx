@@ -8,8 +8,6 @@ import { selectCurrentLanguage } from "../../../store/slices/Languages/LanguageS
 // Internal Tools & Utilities
 import type { TimerProps } from "../data/ObjectDescription.ts";
 import { translator } from "../../translator/translator.ts";
-
-// Local Components
 import { useTimerManager } from "../hooks/useTimerManager.ts";
 import { TimerFixer } from "../../TimerFixer/view/TimerFixer.tsx";
 

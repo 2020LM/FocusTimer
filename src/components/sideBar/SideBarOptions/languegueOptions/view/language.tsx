@@ -8,8 +8,6 @@ import { selectLanguages, selectCurrentLanguage } from "../../../../../store/sli
 // Internal Tools & Utilities
 import { translator } from "../../../../translator/translator.ts";
 import cheque from "../../../../../assets/img/icons/cheque.webp";
-
-// Local Components
 import { useLanguageSelection } from "../hooks/useLanguageSelection.ts";
 
 // Component Styles

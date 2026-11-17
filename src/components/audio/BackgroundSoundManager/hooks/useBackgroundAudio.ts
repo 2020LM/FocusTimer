@@ -2,7 +2,7 @@
 import { useEffect, useRef } from "react";
 
 // Architecture & Global State Imports
-import { BackgroundSong } from "../../../../store/slices/Sounds/SoundsSlice.ts";
+import type { BackgroundSong } from "../../../../store/slices/Sounds/types/SoundsSliceType.tsx";
 
 export const useBackgroundAudio = ({
   currentSong,

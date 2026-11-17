@@ -3,7 +3,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 // Architecture & Global State Imports
 import { RootState } from "../../store.js";
-
+import type { TimerValues, TimeState } from "./types/TimeSliceType.tsx";
 
 // Internal Tools & Utilities
 import storage from "../../../lib/storage.js";
@@ -13,20 +13,6 @@ const fixingTimer = false;
 const triggeredFixingTime = false;
 const secondsRestart = initialSeconds;
 const timeSetByUser = false;
-
-type TimerValues = {
-  totalSeconds: number;
-  seconds: number;
-  minutes: number;
-};
-
-type TimeState = {
-  initialSeconds: number;
-  fixingTimer: boolean;
-  triggeredFixingTime: boolean;
-  secondsRestart: number;
-  timeSetByUser: boolean;
-} & TimerValues;
 
 const initialState: TimeState = {
   initialSeconds,

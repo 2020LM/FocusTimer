@@ -13,8 +13,6 @@ import upArrow from "../../../assets/img/icons/caret-flecha-hacia-arriba_1_11zon
 import downArrow from "../../../assets/img/icons/caret-abajo_16_11zon_102_11zon-removebg-preview.webp";
 import close from "../../../assets/img/icons/cerrar_3_11zon_107_11zon-removebg-preview.png";
 import closeRed from "../../../assets/img/icons/cerrar_rojo__2_11zon_106_11zon-removebg-preview.png";
-
-// Local Components
 import { useTimerFixerManager } from "../hooks/useTimerFixerManager.ts";
 import { useTimerFixerStyle } from "./TimerFixerStyle.ts";
 

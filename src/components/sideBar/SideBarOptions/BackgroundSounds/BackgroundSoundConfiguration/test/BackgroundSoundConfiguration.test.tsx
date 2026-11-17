@@ -7,10 +7,10 @@ import { Provider } from "react-redux";
 // Architecture & Global State Imports
 import { store } from "../../../../../../store/store.ts"
 import { setMutedMusic } from "../../../../../../store/slices/Sounds/SoundsSlice.ts";
-import storage from "../../../../../../lib/storage.ts";
 
-// Local Components
-import { BackgroundSoundConfiguration } from "../BackgroundSoundConfiguration.tsx"
+// Internal Tools & Utilities
+import storage from "../../../../../../lib/storage.ts";
+import { BackgroundSoundConfiguration } from "../view/BackgroundSoundConfiguration.tsx"
 
 beforeEach(() => {
     // Store Configuration.

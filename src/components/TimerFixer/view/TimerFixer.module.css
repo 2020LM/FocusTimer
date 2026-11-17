@@ -208,29 +208,32 @@ img {
 @media (max-width: 500px) {
   .modalContent {
     top: 50%;
-    left: 12px;
-    width: calc(100vw - 24px);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     max-height: calc(100vh - 24px);
     padding: 36px 12px 16px;
   }
 
   .modal .modalContent {
-    width: calc(100vw - 24px);
+    width: min(340px, calc(100vw - 28px));
   }
 
   .content {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) 16px repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, 50px) 16px repeat(2, 50px);
+    gap: 10px;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: auto;
-    margin: 8px 0 12px;
+    margin: 12px 0 16px;
     transform: none;
   }
 
   .content > div:not(.twoPoints) {
     display: grid;
-    grid-template-rows: 26px 38px 26px;
+    grid-template-rows: 50px 38px 50px;
     justify-items: center;
     align-items: center;
     min-width: 0;
@@ -241,16 +244,16 @@ img {
   }
 
   .content > div:not(.twoPoints) > button {
-    width: 34px;
-    height: 26px;
+    width: 50px;
+    height: 50px;
     margin: 0;
     padding: 0;
   }
 
   .content > div:not(.twoPoints) > button > img {
-    width: 20px;
-    height: 20px;
-    max-height: 20px;
+    width: 37.5px;
+    height: 37.5px;
+    max-height: 37.5px;
     transform: none;
   }
 

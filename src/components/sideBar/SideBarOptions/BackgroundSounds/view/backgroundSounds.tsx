@@ -15,10 +15,8 @@ import {
   RUNNING,
   INDIA,
 } from "../../../../../General/generalVariables.ts";
-
-// Local Components
 import { SongByType } from "./songByType.tsx";
-import { BackgroundSoundConfiguration } from "../BackgroundSoundConfiguration/BackgroundSoundConfiguration.tsx";
+import { BackgroundSoundConfiguration } from "../BackgroundSoundConfiguration/view/BackgroundSoundConfiguration.tsx";
 
 export const BackgroundSounds = () => {
 

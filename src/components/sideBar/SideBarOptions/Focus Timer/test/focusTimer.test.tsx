@@ -3,8 +3,10 @@ import { render, screen } from "@testing-library/react"
 import { Provider } from "react-redux";
 
 // Architecture & Global State Imports
-import { FocusTimer } from "../view/focusTimer.tsx"
 import { store } from "../../../../../store/store.ts"
+
+// Internal Tools & Utilities
+import { FocusTimer } from "../view/focusTimer.tsx"
 
 test("Checking if all the elements are in the screen", () => {
 

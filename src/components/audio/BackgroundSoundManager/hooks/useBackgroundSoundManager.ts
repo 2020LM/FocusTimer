@@ -12,7 +12,7 @@ import {
 	updateSong,
 } from "../../../../store/slices/Sounds/SoundsSlice.js";
 
-// Local Components
+// Internal Tools & Utilities
 import { useBackgroundAudio } from "./useBackgroundAudio.ts";
 
 export const useBackgroundSoundManager = () => {

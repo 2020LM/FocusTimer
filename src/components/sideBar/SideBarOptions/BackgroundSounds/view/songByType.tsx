@@ -1,11 +1,9 @@
 
-// Third-Party & Ecosystem Imports
-import { useAppSelector } from "../../../../../store/store.ts";
-
 // Architecture & Global State Imports
+import { useAppSelector } from "../../../../../store/store.ts";
 import { selectSongsByType } from "../../../../../store/slices/Sounds/SoundsSlice.ts";
 
-// Local Components
+// Internal Tools & Utilities
 import BackgroundSound from "./BackgroundSound.tsx";
 
 // Component Styles

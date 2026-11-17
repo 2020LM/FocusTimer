@@ -9,8 +9,6 @@ import { store } from "../../../../../store/store.ts"
 // Internal Tools & Utilities
 import { translator } from "../../../../translator/translator.ts"
 import { NATURE, ANIME, CAFE, CLASSICAL, JAZZ, RUNNING, INDIA } from "../../../../../General/generalVariables.ts";
-
-// Local Components
 import { BackgroundSounds } from "../view/backgroundSounds.tsx";
 
 

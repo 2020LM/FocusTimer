@@ -3,8 +3,9 @@ import { createSelector, createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 // Architecture & Global State Imports
 import { BackgroundImages } from "../../../components/sideBar/SideBarOptions/backgrounds/data/backgroundData.ts";
-import type { BackgroundItem } from "../../../components/sideBar/SideBarOptions/backgrounds/data/ObjectDescription.js";
+import type { BackgroundItem } from "../../../components/sideBar/SideBarOptions/backgrounds/types/ObjectDescription.js";
 import { RootState } from "../../store.js";
+import type { BackgroundState } from "./types/BackgroundSliceType.tsx";
 
 // Internal Tools & Utilities
 import contextLoader from "../../../lib/ContextLoader.js";
@@ -25,13 +26,6 @@ const indexBackgroundImage = contextLoader.loadLocalStorage(
 );
 const backgroundImages = BackgroundImages;
 const backgroundLoaded = false;
-
-type BackgroundState = {
-  background: string;
-  indexBackgroundImage: number;
-  backgroundImages: BackgroundItem[];
-  backgroundLoaded: boolean;
-};
 
 const initialState: BackgroundState = {
   background,

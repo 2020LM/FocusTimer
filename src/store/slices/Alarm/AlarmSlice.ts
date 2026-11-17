@@ -4,13 +4,13 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 // Architecture & Global State Imports
 import { AlarmSoundData } from "../../../components/sideBar/SideBarOptions/alarmSounds/data/alarmSoundData.ts";
 import { RootState } from "../../store.js";
+import type { AlarmSound, AlarmState } from "./types/AlarmSliceType.tsx";
 
 // Internal Tools & Utilities
 import storage from "../../../lib/storage.js";
 
 
 const alarmSounds = AlarmSoundData
-type AlarmSound = (typeof AlarmSoundData)[number];
 
 const alarmVolume: number = storage.get("alarmVolume", 50)
 const storedAlarmIndex = Number(storage.get("currentAlarm", 0))
@@ -19,13 +19,6 @@ const currentAlarmIndex = Number.isInteger(storedAlarmIndex) && storedAlarmIndex
   : 0
 const currentAlarm = alarmSounds[currentAlarmIndex]
 const mutedAlarm: boolean = storage.get("mutedAlarm", false)
-
-type AlarmState = {
-  alarmSounds: AlarmSound[];
-  alarmVolume: number;
-  currentAlarm: AlarmSound;
-  mutedAlarm: boolean;
-};
 
 const initialState: AlarmState = {
   alarmSounds,

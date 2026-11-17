@@ -18,9 +18,7 @@ import {
   GRADIENTS,
   SOLIDS,
 } from "../../../../../General/generalVariables.ts";
-
-// Local Components
-import { BackgroundByType } from "./backgroundByType.tsx";
+import { BackgroundByType } from "../backgroundByType/view/backgroundByType.tsx";
 
 // Component Styles
 import classes from "./backgrounds.module.css";

@@ -19,7 +19,7 @@ jest.unstable_mockModule("react-blurhash", () => ({
     Blurhash: () => null,
 }));
 
-// Local Components
+// Internal Tools & Utilities
 const { SideBar } = await import("../view/sideBar.tsx");
 
 // Defining global values:

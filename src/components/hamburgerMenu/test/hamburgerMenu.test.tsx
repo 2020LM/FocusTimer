@@ -13,7 +13,7 @@ import { Provider } from "react-redux";
 import store from "../../../store/store.ts";
 import { setVisibleSideBar } from "../../../store/slices/SideBar/SideBarSlice.js";
 
-// Local Components
+// Internal Tools & Utilities
 import { HamburgerMenu } from "../view/hamburgerMenu.tsx";
 
 
@@ -26,6 +26,7 @@ jest.unstable_mockModule("react-custom-scrollbars", () => ({
     Scrollbars: ({ children }: { children: React.ReactNode }) => children,
 }));
 
+// Internal Tools & Utilities
 const { SideBar } = await import("../../sideBar/view/sideBar.tsx");
 
 test("Checking if hamburger menu button appears properly.", () => {

@@ -13,9 +13,7 @@ import { setCurrentAlarm as setCurrentAlarmAction
 import { translator } from "../../../../translator/translator.ts";
 import storage from "../../../../../lib/storage.ts";
 import cheque from "../../../../../assets/img/icons/cheque.webp";
-
-// Local Components
-import { AlarmConfiguration } from "../AlarmConfiguration/AlarmConfiguration.tsx";
+import { AlarmConfiguration } from "../AlarmConfiguration/view/AlarmConfiguration.tsx";
 
 // Component Styles
 import classes from "./alarmSounds.module.css";

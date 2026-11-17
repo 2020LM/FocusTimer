@@ -236,6 +236,14 @@ img {
     overflow: auto;
   }
 
+  .rigthArrow {
+    z-index: 1;
+  }
+
+  .closeModal {
+    z-index: 2;
+  }
+
   .listItem {
     margin-top: -12.5%;
   }

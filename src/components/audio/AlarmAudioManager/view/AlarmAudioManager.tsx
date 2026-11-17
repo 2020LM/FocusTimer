@@ -13,7 +13,7 @@ import {
   selectMinutes,
 } from "../../../../store/slices/Time/TimeSlice.ts";
 
-// Local Components
+// Internal Tools & Utilities
 import { useAlarmAudio } from "../hooks/useAlarmHooks.ts";
 
 export const AlarmAudioManager = () => {

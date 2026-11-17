@@ -73,7 +73,11 @@ export const useTimerFixerManager = (): TimerFixerManager => {
   const handleValidation = (event: ChangeEvent<HTMLInputElement>) => {
     const { value, id } = event.currentTarget;
 
-    if (/^\d$/.test(value) && isTimerDigitId(id)) {
+    if (
+      /^\d$/.test(value) &&
+      isTimerDigitId(id) &&
+      (id !== "minutes" || /^[0-5]$/.test(value))
+    ) {
       setNewValue(id, value);
     }
   };
